@@ -3684,8 +3684,8 @@ void Clang::ConstructJob(Compilation &C, const JobAction &JA,
           A->getOption().getID() == options::OPT_mred_zone ||
           A->getOption().getID() == options::OPT_mno_red_zone ||
           A->getOption().getID() == options::OPT_Wa_COMMA ||
-          A->getOption().getID() == options::OPT_Xassembler ||
-          A->getOption().getID() == options::OPT_mllvm)
+          A->getOption().getID() == options::OPT_Xassembler)/* ||
+          A->getOption().getID() == options::OPT_mllvm)*/
       D.Diag(diag::err_drv_unsupported_embed_bitcode) << A->getSpelling();
     }
 
